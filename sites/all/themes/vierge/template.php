@@ -4,6 +4,9 @@
  * Implements template_preprocess_html().
  */
 function vierge_preprocess_html(&$variables) {
+
+	drupal_add_css('//fonts.googleapis.com/css?family=Montserrat:300,400,600,700', array('group' => CSS_THEME));
+
 }
 
 /**

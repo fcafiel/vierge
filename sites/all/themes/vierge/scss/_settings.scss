@@ -87,6 +87,7 @@ $column-gutter: rem-calc(0);
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // We use these to define default font stacks
+$font-family-sans-serif: 'Montserrat', Helvetica, Roboto, Arial, sans-serif;
 // $font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 // $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
@@ -95,7 +96,8 @@ $column-gutter: rem-calc(0);
 // $font-weight-normal: normal !default;
 // $font-weight-bold: bold !default;
 
- $white       : #FFFFFF;
+ $white       	: #FFFFFF;
+ $green 		: #77AF52;
 // $ghost       : #FAFAFA;
 // $snow        : #F9F9F9;
 // $vapor       : #F6F6F6;
@@ -116,7 +118,7 @@ $column-gutter: rem-calc(0);
 // $black       : #000000;
 
 // We use these as default colors throughout
- $primary-color: #555555;
+ $primary-color: #555557;
  $secondary-color: #77B652;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;

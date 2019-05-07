@@ -1,0 +1,147 @@
+.sf-style-vierge {
+  float: left;
+  margin-bottom: 1em;
+  padding: 0;
+  background: red !important;
+}
+.sf-menu.sf-style-vierge.sf-navbar {
+  width: 100%;
+}
+.sf-menu.sf-style-vierge ul {
+  padding-left: 0;
+}
+.sf-menu.sf-style-vierge a,
+.sf-menu.sf-style-vierge span.nolink {
+  border: 1px solid #e1e1e1;
+  color: #555555;
+  padding: 0.75em 1em;
+}
+.sf-menu.sf-style-vierge a.sf-with-ul,
+.sf-menu.sf-style-vierge span.nolink.sf-with-ul {
+  padding-right: 2.25em;
+}
+.sf-menu.sf-style-vierge.rtl a.sf-with-ul,
+.sf-menu.sf-style-vierge.rtl span.nolink.sf-with-ul {
+  padding-left: 2.25em;
+  padding-right: 1em;
+}
+.sf-menu.sf-style-vierge.sf-navbar a,
+.sf-menu.sf-style-vierge.sf-navbar span.nolink {
+  border: 0;
+}
+.sf-menu.sf-style-vierge span.sf-description {
+  color: #555555;
+  display: block;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  margin: 5px 0 0 5px;
+  padding: 0;
+}
+.sf-menu.sf-style-vierge.rtl span.sf-description {
+  margin: 5px 5px 0 0;
+}
+.sf-menu.sf-style-vierge li,
+.sf-menu.sf-style-vierge.sf-navbar {
+  background: #f9f9f9;
+}
+.sf-menu.sf-style-vierge li li {
+  background: #f7f7f7;
+}
+.sf-menu.sf-style-vierge li li li {
+  background: #f5f5f5;
+}
+.sf-menu.sf-style-vierge li:hover,
+.sf-menu.sf-style-vierge li.sfHover,
+.sf-menu.sf-style-vierge a:focus,
+.sf-menu.sf-style-vierge a:hover,
+.sf-menu.sf-style-vierge a:active,
+.sf-menu.sf-style-vierge span.nolink:hover,
+.sf-menu.sf-style-vierge.sf-navbar li li {
+  background: #e9e9e9;
+}
+.sf-menu.sf-style-vierge.sf-navbar li ul {
+  background-color: #e9e9e9;
+}
+.sf-menu.sf-style-vierge.sf-navbar li ul li ul {
+  background-color: transparent;
+}
+.sf-menu.sf-style-vierge .sf-sub-indicator {
+  background-image: url('../images/arrows-777777.png');
+}
+.sf-menu.sf-style-vierge.rtl .sf-sub-indicator {
+  background-image: url('../images/arrows-777777-rtl.png');
+}
+div.sf-accordion-toggle.sf-style-vierge a {
+  background: #f9f9f9;
+  border: 1px solid #e1e1e1;
+  color: #555555;
+  padding: 1em;
+}
+div.sf-accordion-toggle.sf-style-vierge a.sf-expanded,
+.sf-menu.sf-style-vierge.sf-accordion li.sf-expanded {
+  background-color: #e9e9e9;
+}
+div.sf-accordion-toggle.sf-style-vierge a.sf-expanded,
+.sf-menu.sf-style-vierge.sf-accordion li.sf-expanded > a,
+.sf-menu.sf-style-vierge.sf-accordion li.sf-expanded > span.nolink {
+  font-weight: bold;
+}
+.sf-menu.sf-style-vierge.sf-accordion li a.sf-accordion-button {
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 499;
+}
+.sf-menu.sf-style-vierge.sf-accordion li li a,
+.sf-menu.sf-style-vierge.sf-accordion li li span.nolink {
+  padding-left: 2em;
+}
+.sf-menu.sf-style-vierge.sf-accordion li li li a,
+.sf-menu.sf-style-vierge.sf-accordion li li li span.nolink {
+  padding-left: 3em;
+}
+.sf-menu.sf-style-vierge.sf-accordion li li li li a,
+.sf-menu.sf-style-vierge.sf-accordion li li li li span.nolink {
+  padding-left: 4em;
+}
+.sf-menu.sf-style-vierge.sf-accordion li li li li li a,
+.sf-menu.sf-style-vierge.sf-accordion li li li li li span.nolink {
+  padding-left: 5em;
+}
+.sf-menu.sf-style-vierge.rtl.sf-accordion li li a,
+.sf-menu.sf-style-vierge.rtl.sf-accordion li li span.nolink {
+  padding-left: auto;
+  padding-right: 2em;
+}
+.sf-menu.sf-style-vierge.rtl.sf-accordion li li li a,
+.sf-menu.sf-style-vierge.rtl.sf-accordion li li li span.nolink {
+  padding-left: auto;
+  padding-right: 3em;
+}
+.sf-menu.sf-style-vierge.rtl.sf-accordion li li li li a,
+.sf-menu.sf-style-vierge.rtl.sf-accordion li li li li span.nolink {
+  padding-left: auto;
+  padding-right: 4em;
+}
+.sf-menu.sf-style-vierge.rtl.sf-accordion li li li li li a,
+.sf-menu.sf-style-vierge.rtl.sf-accordion li li li li li span.nolink {
+  padding-left: auto;
+  padding-right: 5em;
+}
+.sf-menu.sf-style-vierge ul.sf-megamenu li.sf-megamenu-wrapper ol,
+.sf-menu.sf-style-vierge ul.sf-megamenu li.sf-megamenu-wrapper ol li {
+  margin: 0;
+  padding: 0;
+}
+.sf-menu.sf-style-vierge ul.sf-megamenu li.sf-megamenu-wrapper a.menuparent,
+.sf-menu.sf-style-vierge ul.sf-megamenu li.sf-megamenu-wrapper span.nolink.menuparent {
+  font-weight: bold;
+}
+.sf-menu.sf-style-vierge ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column {
+  display: inline;
+  float: left;
+}
+.sf-menu.sf-style-vierge.rtl ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column {
+  float: right;
+}
