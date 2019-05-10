@@ -9670,21 +9670,60 @@ header {
 @media only screen and (max-width: 1000px) {
   header {
     position: relative;
-    padding: 1em;
+    padding: 0;
     background: rgba(0, 0, 0, 0.5);
   }
   header .logo {
     max-width: 200px;
   }
+  header .medium-3.columns {
+    padding: 1rem;
+  }
   .menu-principal #superfish-1-toggle span {
-    background: url("../img/menu.png") no-repeat center center;
-    text-indent: -9999px;
-    position: fixed;
-    top: 2em;
+    position: absolute;
+    top: -4em;
     right: 2em;
     display: inline-block;
     width: 30px;
     height: 30px;
+    background: url("../img/menu.png") no-repeat center center;
+    text-indent: -9999px;
+  }
+  .menu-principal #superfish-1-accordion {
+    background: #555;
+  }
+  .menu-principal #superfish-1-accordion > li {
+    border-bottom: solid 1px #444;
+  }
+  .menu-principal #superfish-1-accordion > li.menuparent {
+    position: relative !important;
+  }
+  .menu-principal #superfish-1-accordion > li.menuparent > a:after {
+    position: absolute;
+    top: 10px;
+    right: 11px;
+    content: "";
+    background: url("../img/arrow-right.png") no-repeat center center;
+    width: 20px;
+    height: 20px;
+    background-size: 12px;
+    transform: rotate(90deg);
+    transition: all linear 0.2s;
+  }
+  .menu-principal #superfish-1-accordion > li.menuparent.sf-expanded > a:after {
+    transform: rotate(-90deg);
+  }
+  .menu-principal #superfish-1-accordion ul.sf-has-clone-parent {
+    background: #444;
+    padding-left: 1rem;
+    margin-top: 0 !important;
+  }
+  .menu-principal #superfish-1-accordion ul.sf-has-clone-parent li {
+    border-bottom: solid 1px #555;
+  }
+  .menu-principal #superfish-1-accordion ul.sf-has-clone-parent li.sf-clone-parent a {
+    color: #77AF52;
+    font-weight: bold;
   }
   .slideshow-principal .owl-item .info-slide {
     position: absolute;
@@ -9717,6 +9756,9 @@ header {
   .soluciones-productos-home .owl-item .info-servicio .views-field-body p, .soluciones-productos-home .owl-item .info-servicio .views-field-body li {
     font-size: 3vw;
   }
+  .front .soluciones-productos-home {
+    max-width: 100% !important;
+  }
   .formulario-contacto {
     padding: 2em 1em;
   }
@@ -9724,10 +9766,12 @@ header {
     display: block;
     width: 100%;
     text-align: center;
+    padding: 0 !important;
   }
   .formulario-contacto form {
     text-align: center;
     width: 100%;
+    margin-bottom: 0;
   }
   .formulario-contacto form .form-item {
     display: block;
@@ -9771,6 +9815,13 @@ header {
     font-size: 4vw;
     line-height: 1.2em;
   }
+  .lead #lead-inner {
+    padding: 0 1rem;
+  }
+  .body {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
   .info-sedes {
     padding: 3em 1em;
   }
@@ -9784,9 +9835,62 @@ header {
 @media only screen and (max-width: 640px) {
   .listado-productos .row {
     display: block;
+    padding-top: 0;
   }
   .listado-productos .row .columns {
     display: block;
     float: right;
+    padding: 1em 0 0;
+  }
+  .soluciones-productos-home .owl-controls {
+    display: none !important;
+  }
+  .block-quicktabs .block-title {
+    display: block;
+    margin-left: 0;
+    text-align: center;
+  }
+  .block-quicktabs .item-list {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  .block-quicktabs .item-list ul {
+    text-align: center;
+  }
+  .block-quicktabs .item-list ul li a {
+    padding: 0 5px;
+  }
+  .block-quicktabs .quicktabs_main .views-fieldset {
+    padding: 1em;
+  }
+  .view-blog-articulo-destacado {
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 1rem;
+  }
+  .sidebar {
+    padding: 1rem;
+  }
+  .view-blog {
+    padding: 1rem;
+  }
+  .view-blog .views-field-body p {
+    font-size: 1.2rem;
+    line-height: 1.4em;
+    margin-top: 1rem;
+  }
+  .view-blog-articulo-destacado .views-field-body p {
+    font-size: 1.2rem;
+    line-height: 1.4em;
+    margin-top: 1rem;
+  }
+  .node-type-article .encabezado-pagina .views-row .info-encabezado h1 {
+    font-size: 6vw !important;
+  }
+  .node-type-article .field-name-field-fecha {
+    margin: 1rem;
+    color: #77AF52;
+    font-weight: bold;
   }
 }

@@ -1202,33 +1202,74 @@ header {
 
 @media only screen and (max-width: 1000px) {
 
-
-
-}
-
-
-@media only screen and (max-width: 1000px) {
-
 	header {
 		position: relative;
-		padding: 1em;
+		padding: 0;
 		background: rgba(0, 0, 0, 0.5);
 		.logo {
 			max-width: 200px;
+		}
+		.medium-3.columns {
+			padding: 1rem;
 		}
 	}
 
 	.menu-principal {
 		#superfish-1-toggle {
 			span {
-				background: url("../img/menu.png") no-repeat center center;
-				text-indent: -9999px;
-				position: fixed;
-				top: 2em;
+				position: absolute;
+				top: -4em;
 				right: 2em;
 				display: inline-block;
 				width: 30px;
 				height: 30px;
+				background: url("../img/menu.png") no-repeat center center;
+				text-indent: -9999px;
+			}
+		}
+		#superfish-1-accordion {
+			background: #555;
+			> li {
+				border-bottom: solid 1px #444;
+			}
+			> li.menuparent {
+				position: relative !important;
+				> a {
+					&:after {
+						position: absolute;
+						top: 10px;
+						right: 11px;
+						content: "";
+						background: url("../img/arrow-right.png") no-repeat center center;
+						width: 20px;
+						height: 20px;
+						background-size: 12px;
+						transform: rotate(90deg);
+						transition: all linear 0.2s;
+					}
+				}
+
+			}
+			> li.menuparent.sf-expanded {
+				> a {
+					&:after {
+						transform: rotate(-90deg);
+					}
+				}
+			}
+			ul.sf-has-clone-parent {
+				background: #444;
+				padding-left: 1rem;
+				margin-top: 0 !important;
+				li {
+					border-bottom: solid 1px #555;
+				}
+				li.sf-clone-parent {
+					a {
+						color: $green;
+						font-weight: bold;
+					}
+				}
 			}
 		}
 	}
@@ -1279,16 +1320,24 @@ header {
 		}
 	}
 
+	.front {
+		.soluciones-productos-home {
+			max-width: 100% !important;
+		}
+	}
+
 	.formulario-contacto {
 		padding: 2em 1em;
 		.block-title {
 			display: block;
 			width: 100%;
 			text-align: center;
+			padding: 0 !important;
 		}
 		form {
 			text-align: center;
 			width: 100%;
+			margin-bottom: 0;
 			.form-item {
 				display: block;
 				width: 100%;
@@ -1352,6 +1401,17 @@ header {
 		}
 	}
 
+	.lead {
+		#lead-inner {
+			padding: 0 1rem;
+		}
+	}
+
+	.body {
+		padding-left: 1rem !important;
+		padding-right: 1rem !important;
+	}
+
 
 	.info-sedes {
 		padding: 3em 1em;
@@ -1368,11 +1428,87 @@ header {
 	.listado-productos {
 		.row {
 			display: block;
+			padding-top: 0;
 			.columns {
 				display: block;
 				float: right;
+				padding: 1em 0 0;
 			}
 		}
 	}	
+
+	.soluciones-productos-home {
+		.owl-controls {
+			display: none !important;
+		}
+	}
+	.block-quicktabs {
+		.block-title {
+			display: block;
+			margin-left: 0;
+			text-align: center;
+		}
+		.item-list {
+			position: relative;
+			top: 0;
+			right: 0;
+			ul {
+				text-align: center;
+				li {
+					a {
+						padding: 0 5px;
+					}
+				}
+			}
+		}
+		.quicktabs_main {
+			.views-fieldset {
+				padding: 1em;
+			}
+		}
+	}
+	.view-blog-articulo-destacado {
+		margin-right: 0;
+		margin-bottom: 0;
+		padding: 1rem;
+	}
+	.sidebar {
+		padding: 1rem;
+	}
+	.view-blog {
+		padding: 1rem;
+		.views-field-body {
+			p {
+				font-size: 1.2rem;
+				line-height: 1.4em;
+				margin-top: 1rem;
+			}
+		}
+	}
+	.view-blog-articulo-destacado {
+		.views-field-body {
+			p {
+				font-size: 1.2rem;
+				line-height: 1.4em;
+				margin-top: 1rem;
+			}
+		}
+	}
+	.node-type-article {
+		.encabezado-pagina {
+			.views-row {
+				.info-encabezado {
+					h1 {
+						font-size: 6vw !important;
+					}
+				}
+			}
+		}
+		.field-name-field-fecha {
+			margin: 1rem;
+			color: $green;
+			font-weight: bold;
+		}
+	}
 }
 
